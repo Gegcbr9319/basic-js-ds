@@ -10,11 +10,9 @@ class BinarySearchTree {
   constructor(data) {
     this.tree = data ? {data, right: null, left: null} : null;
   }
-
   root() {
    return this.tree;
   }
-
   add( data ) {
     let node = {data, right: null, left: null, parent: null}
     let current = this.tree;
@@ -72,7 +70,6 @@ class BinarySearchTree {
     }
   }
 }
-
   remove( data ) {
    let current = this.find(data);
 
@@ -129,11 +126,6 @@ class BinarySearchTree {
         max.parent.left = null;
       }
     }
-
-
-
-
-
   }
 
   min() {
